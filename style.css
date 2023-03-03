@@ -1,0 +1,109 @@
+:root {
+    --cor-contraste: #40513B;
+    --cor-fundo: #EDF1D6;
+    --cor-primaria: #609966;
+    --cor-secundaria: #9DC08B;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: fit-content;
+    width: 100vw;
+    align-items: center;
+}
+
+#cabecalho {
+    width: 50%;
+    height: fit-content;
+    background-color: var(--cor-primaria);
+    border: var(--cor-contraste) 6px solid;
+    padding: 1%;
+}
+
+#chat {
+    width: 50%;
+    height: fit-content;
+    background-color: var(--cor-fundo);
+    border: var(--cor-contraste) 6px solid;
+    border-top: 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding: 1%;
+}
+
+.usuario {
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    transition: width 2s;
+}
+
+.atendente {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.pessoa {
+    width: 50%;
+    background-color: var(--cor-primaria);
+    padding: 1%;
+    border: solid var(--cor-contraste) 4px;
+    border-bottom: 0px;
+    margin: 1%;
+    margin-bottom: 0;
+}
+
+.msg {
+    width: 50%;
+    background-color: var(--cor-secundaria);
+    padding: 1%;
+    border: solid var(--cor-contraste) 4px;
+    border-top: 0px;
+    margin: 1%;
+    margin-top: 0;
+}
+
+#rodape {
+    width: 50%;
+    height: fit-content;
+    background-color: var(--cor-fundo);
+    border: var(--cor-contraste) 6px solid;
+    border-top: 0px;
+    padding: 1%;
+    display: flex;
+}
+
+#area_texto {
+    height: fit-content;
+    width: 80%;
+    padding: 2%;
+    padding-bottom: 0;
+    font-size: larger;
+    border: #40513B solid 4px;
+    border-right: 0px;
+}
+
+#enviar {
+    width: 20%;
+    background-color: var(--cor-primaria);
+    border: #40513B 4px solid;
+    
+}
+
+#enviar:hover {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-contraste);
+    transition: 0.5s;
+}
