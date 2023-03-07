@@ -8,6 +8,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -15,14 +16,12 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: fit-content;
     width: 100vw;
     align-items: center;
 }
 
 #cabecalho {
     width: 50%;
-    height: fit-content;
     background-color: var(--cor-primaria);
     border: var(--cor-contraste) 6px solid;
     padding: 1%;
@@ -30,7 +29,9 @@ body {
 
 #chat {
     width: 50%;
-    height: fit-content;
+    overflow: auto;
+    flex: 1;
+    box-sizing: border-box;
     background-color: var(--cor-fundo);
     border: var(--cor-contraste) 6px solid;
     border-top: 0px;
@@ -38,6 +39,7 @@ body {
     flex-direction: column;
     gap: 6px;
     padding: 1%;
+    max-height: 390px;
 }
 
 .usuario {
@@ -105,5 +107,5 @@ body {
 #enviar:hover {
     background-color: var(--cor-secundaria);
     color: var(--cor-contraste);
-    transition: 0.5s;
+    transition: 0.9s;
 }
